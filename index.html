@@ -6,6 +6,17 @@
     <title>botick</title>
 </head>
 <body>
-    
+    <div>
+        <p>
+            website
+        </p>
+    </div>
+    <script>
+        // Проверка поддержки WebApp
+        if (window.Telegram.WebApp.initData) {
+            Telegram.WebApp.expand(); // Раскрыть на весь экран
+            Telegram.WebApp.enableClosingConfirmation(); // Подтверждение закрытия
+        }
+    </script>
 </body>
 </html>
